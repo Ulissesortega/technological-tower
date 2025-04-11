@@ -1,0 +1,13 @@
+---
+import { Image } from "astro:assets";
+import Two from "../assets/Two.png";
+import Layout from "../layouts/Layout.astro";
+import { fade } from "astro:transitions";
+
+const url = Astro.url;
+const viewName = url.searchParams.get("panda") ?? "default";
+---
+
+<Layout>
+    <p>Countertop</p>
+</Layout>

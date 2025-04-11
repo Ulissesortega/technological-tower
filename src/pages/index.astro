@@ -1,0 +1,15 @@
+---
+import Navbar from "../components/Navbar.astro";
+import Hero from "../components/Hero.astro";
+import Cards from "../components/Card.astro";
+import Layout from "../layouts/Layout.astro";
+import { ClientRouter } from "astro:transitions";
+import { fade } from "astro:transitions";
+import CabinetsCard from "../components/CabinetsCard.astro";
+---
+
+<Layout>
+	<ClientRouter />
+	<Hero />
+	<CabinetsCard />
+</Layout>

@@ -1,0 +1,31 @@
+---
+import Kcabinets from "../data/Kcabinets.json"; // adjust path if needed
+---
+
+<div class="row row-cols-1 row-cols-md-2 g-4 mx-1">
+  {
+    Kcabinets.map((cabinet) => (
+      <div class="col">
+        <div class="card h-100">
+          <img
+            src={cabinet.image}
+            class="card-img-top fixed-card-img"
+            alt={cabinet.name}
+          />
+          <div class="card-body">
+            <h5 class="card-title">{cabinet.name}</h5>
+            <p class="card-text">Model ID: {cabinet.id}</p>
+          </div>
+        </div>
+      </div>
+    ))
+  }
+</div>
+
+<style>
+  .fixed-card-img {
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+  }
+</style>
