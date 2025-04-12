@@ -2,6 +2,7 @@
 import Navbar from "../components/Navbar.astro";
 import Hero from "../components/Hero.astro";
 import Carousel from "../components/Carousel.astro";
+import Video from "../components/Video.astro";
 import Cards from "../components/Card.astro";
 import Layout from "../layouts/Layout.astro";
 import { ClientRouter } from "astro:transitions";
@@ -9,6 +10,7 @@ import { fade } from "astro:transitions";
 ---
 
 <Layout>
+	<Video />
 	<ClientRouter />
 	<Hero />
 	<Carousel />
