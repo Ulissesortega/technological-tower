@@ -1,13 +1,14 @@
 ---
-import { Image } from "astro:assets";
-import Two from "../assets/Two.png";
+import Navbar from "../components/Navbar.astro";
+import Hero from "../components/Hero.astro";
 import Layout from "../layouts/Layout.astro";
+import { ClientRouter } from "astro:transitions";
 import { fade } from "astro:transitions";
-
-const url = Astro.url;
-const viewName = url.searchParams.get("panda") ?? "default";
+import CountertopsCard from "../components/CountertopsCard.astro";
 ---
 
 <Layout>
-    <p>Countertop</p>
+    <ClientRouter />
+    <Hero />
+    <CountertopsCard transition:name="kitchen-A" transition:animate="fade" />
 </Layout>

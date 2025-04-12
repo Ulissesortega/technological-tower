@@ -1,20 +1,20 @@
 ---
-import Kcabinets from "../data/Kcabinets.json";
+import Countertops from "../data/Countertops.json"; // adjust path if needed
 ---
 
 <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 mx-1">
   {
-    Kcabinets.map((cabinet) => (
+    Countertops.map((countertop) => (
       <div class="col">
         <div class="card h-100">
           <img
-            src={cabinet.image}
+            src={countertop.image}
             class="card-img-top fixed-card-img"
-            alt={cabinet.name}
+            alt={countertop.name}
           />
           <div class="card-body">
-            <h5 class="card-title">{cabinet.name}</h5>
-            <p class="card-text">Model ID: {cabinet.id}</p>
+            <h5 class="card-title">{countertop.name}</h5>
+            <p class="card-text">card-titleModel ID: {countertop.id}</p>
           </div>
         </div>
       </div>
@@ -28,7 +28,6 @@ import Kcabinets from "../data/Kcabinets.json";
     object-fit: cover;
     object-position: center;
   }
-
   .card-title {
     font-weight: bold !important;
   }
