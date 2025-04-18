@@ -2,46 +2,46 @@
     {
         "id": "M17",
         "name": "Natural Maple",
-        "image": "./src/assets/MilzenKC/M17.jpg"
+        "image": "../public/MilzenKC/M17.jpg"
     },
     {
         "id": "M21",
         "name": "Hollis White",
-        "image": "./src/assets/MilzenKC/M21.jpg"
+        "image": "../public/MilzenKC/M21.jpg"
     },
     {
         "id": "M22",
         "name": "Hollis Grey",
-        "image": "./src/assets/MilzenKC/M22.jpg"
+        "image": "../public/MilzenKC/M22.jpg"
     },
     {
         "id": "M25",
         "name": "Aspen White",
-        "image": "./src/assets/MilzenKC/M25.jpg"
+        "image": "../public/MilzenKC/M25.jpg"
     },
     {
         "id": "M27",
         "name": "Baron Grey",
-        "image": "./src/assets/MilzenKC/M27.jpg"
+        "image": "../public/MilzenKC/M27.jpg"
     },
     {
         "id": "M28",
         "name": "Antique Grey",
-        "image": "./src/assets/MilzenKC/M28.jpg"
+        "image": "../public/MilzenKC/M28.jpg"
     },
     {
         "id": "M31",
         "name": "Newport Mocha",
-        "image": "./src/assets/MilzenKC/M31.jpg"
+        "image": "../public/MilzenKC/M31.jpg"
     },
     {
         "id": "M36",
         "name": "Zen White Slim Shaker",
-        "image": "./src/assets/MilzenKC/M36.jpg"
+        "image": "../public/MilzenKC/M36.jpg"
     },
     {
         "id": "M37",
         "name": "Chateau Oak SM Shaker",
-        "image": "./src/assets/MilzenKC/M37.jpg"
+        "image": "../public/MilzenKC/M37.jpg"
     }
 ]

@@ -2,26 +2,26 @@
     {
         "id": "CT-707",
         "name": "Pallazo",
-        "image": "./src/assets/Countertops/CT-707.png"
+        "image": "../public/Countertops/CT-707.png"
     },
     {
         "id": "CT-707",
         "name": "Pallazo",
-        "image": "./src/assets/Countertops/CT-707.png"
+        "image": "../public/Countertops/CT-707.png"
     },
     {
         "id": "CT-707",
         "name": "Pallazo",
-        "image": "./src/assets/Countertops/CT-707.png"
+        "image": "../public/Countertops/CT-707.png"
     },
     {
         "id": "CT-707",
         "name": "Pallazo",
-        "image": "./src/assets/Countertops/CT-707.png"
+        "image": "../public/Countertops/CT-707.png"
     },
     {
         "id": "CT-707",
         "name": "Pallazo",
-        "image": "./src/assets/Countertops/CT-707.png"
+        "image": "../public/Countertops/CT-707.png"
     }
 ]
