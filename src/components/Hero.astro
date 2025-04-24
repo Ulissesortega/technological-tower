@@ -1,35 +1,31 @@
----
+<section
+  class="hero-strip d-flex flex-wrap flex-md-nowrap w-100 gap-3 px-3 py-3 rounded"
+  style="height: 500px;"
+>
+  <!-- Left: Image (hidden on small screens) -->
+  <div
+    class="hero-left col-md-6 d-none d-md-flex justify-content-center align-items-center rounded overflow-hidden"
+    style="height: 100%;"
+  >
+    <img
+      src="/Store/GEO.jpg"
+      alt="Left Image"
+      class="w-100 h-100 object-fit-cover"
+    />
+  </div>
 
----
-
-<section class="hero-section mb-3">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <h1>Welcome to Our Website</h1>
-                <p>This is a simple hero section created using Bootstrap.</p>
-                <a href="#" class="btn btn-primary">Get Started</a>
-            </div>
-        </div>
-    </div>
+  <!-- Right: Video (always visible) -->
+  <div
+    class="hero-right col-12 col-md-6 d-flex justify-content-center align-items-center overflow-hidden"
+    style="height: 100%;"
+  >
+    <video
+      class="w-100 h-100 object-fit-cover rounded"
+      src="https://res.cloudinary.com/dvmkwi05u/video/upload/v1744644935/GEOVideo_lsd92s.mp4"
+      autoplay
+      muted
+      loop
+      playsinline
+    ></video>
+  </div>
 </section>
-
-<style>
-    .hero-section {
-        background-image: url("https://images.unsplash.com/photo-1594640705123-4009f76b1afd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw0fHxkZnxlbnwwfDB8fHwxNzEwNzQ0MDMzfDA&ixlib=rb-4.0.3&q=80&w=1080");
-        background-size: cover;
-        background-position: center;
-        color: #ffffff;
-        text-align: center;
-        padding: 100px 0;
-    }
-
-    .hero-section h1 {
-        font-size: 3rem;
-        font-weight: bold;
-    }
-
-    .hero-section p {
-        font-size: 1.2rem;
-    }
-</style>
