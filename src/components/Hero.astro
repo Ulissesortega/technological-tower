@@ -2,19 +2,35 @@
   class="hero-strip d-flex flex-wrap flex-md-nowrap w-100 gap-3 px-3 py-3 rounded"
   style="height: 500px;"
 >
-  <!-- Left: Image (hidden on small screens) -->
+  <!-- Left: Image with overlay -->
   <div
-    class="hero-left col-md-6 d-none d-md-flex justify-content-center align-items-center rounded overflow-hidden"
+    class="hero-left col-md-6 d-none d-md-flex position-relative rounded overflow-hidden"
     style="height: 100%;"
   >
+    <!-- Dark overlay -->
+    <div class="overlay-dark"></div>
+
+    <!-- Text on top -->
+    <div class="overlay-text text-white text-center px-3">
+      <h1 class="fw-bold">Granite Expo Outlet</h1>
+      <h3>
+        kitchen Cabinets, Countertops, Vanities, Shower Walls
+        <i class="bi bi-clipboard-check-fill" style="color: #28a745;"></i>
+      </h3>
+      <h3>In-stock and ready To Go.</h3>
+      <h3>Great Quality and affordable pricing</h3>
+    </div>
+
+    <!-- Background Image -->
     <img
       src="/Store/GEO.jpg"
       alt="Left Image"
-      class="w-100 h-100 object-fit-cover"
+      class="w-100 h-100 object-fit-cover position-absolute"
+      style="z-index: 0;"
     />
   </div>
 
-  <!-- Right: Video (always visible) -->
+  <!-- Right: Video -->
   <div
     class="hero-right col-12 col-md-6 d-flex justify-content-center align-items-center overflow-hidden"
     style="height: 100%;"
@@ -25,7 +41,24 @@
       autoplay
       muted
       loop
-      playsinline
-    ></video>
+      playsinline></video>
   </div>
 </section>
+
+<style>
+  .overlay-dark {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 100%;
+  }
+</style>
