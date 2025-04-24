@@ -1,18 +1,8 @@
 [
     {
-        "id": "CT-707",
-        "name": "Pallazo",
-        "image": "/Countertops/CT-707.png"
-    },
-    {
-        "id": "CT-436",
-        "name": "Marquesa",
-        "image": "/Countertops/CT-436.jpg"
-    },
-    {
-        "id": "CT-787",
-        "name": "Marvel Black Leather",
-        "image": "/Countertops/CT-787.jpg"
+        "id": "CT-789",
+        "name": "Pearl Valley",
+        "image": "/Countertops/CT-789.jpg"
     },
     {
         "id": "CT-788",
@@ -20,8 +10,88 @@
         "image": "/Countertops/CT-788.jpg"
     },
     {
-        "id": "CT-707",
-        "name": "Pallazo",
-        "image": "/Countertops/CT-707.png"
+        "id": "CT-787",
+        "name": "Marvel Black Leather",
+        "image": "/Countertops/CT-787.jpg"
+    },
+    {
+        "id": "CT-786",
+        "name": "Alps",
+        "image": "/Countertops/CT-786.jpg"
+    },
+    {
+        "id": "CT-785",
+        "name": "Ginza Leather",
+        "image": "/Countertops/CT-785.jpg"
+    },
+    {
+        "id": "CT-784",
+        "name": "Serpenti",
+        "image": "/Countertops/CT-784.jpg"
+    },
+    {
+        "id": "CT-783",
+        "name": "Pelican Rock",
+        "image": "/Countertops/CT-783.jpg"
+    },
+    {
+        "id": "CT-782",
+        "name": "Athens",
+        "image": "/Countertops/CT-782.jpg"
+    },
+    {
+        "id": "CT-781",
+        "name": "Calacatta Firenza",
+        "image": "/Countertops/CT-781.jpg"
+    },
+    {
+        "id": "CT-780",
+        "name": "Cancun",
+        "image": "/Countertops/CT-780.jpg"
+    },
+    {
+        "id": "CT-723",
+        "name": "Ultra White",
+        "image": "/Countertops/CT-723.jpg"
+    },
+    {
+        "id": "CT-702",
+        "name": "Pennelatta",
+        "image": "/Countertops/CT-702.jpg"
+    },
+    {
+        "id": "CT-700",
+        "name": "Empire",
+        "image": "/Countertops/CT-700.jpg"
+    },
+    {
+        "id": "CT-609",
+        "name": "Harrington Grey",
+        "image": "/Countertops/CT-609.jpg"
+    },
+    {
+        "id": "CT-493",
+        "name": "Vena Carrara",
+        "image": "/Countertops/CT-493.jpg"
+    },
+    {
+        "id": "CT-441",
+        "name": "Lucca",
+        "image": "/Countertops/CT-441.jpg"
+    },
+    {
+        "id": "CT-437",
+        "name": "Nocturne",
+        "image": "/Countertops/CT-437.jpg"
+    },
+    {
+        "id": "CT-436",
+        "name": "Marquesa",
+        "image": "/Countertops/CT-436.jpg"
+    },
+    {
+        "id": "CT-434",
+        "name": "Noble White",
+        "image": "/Countertops/CT-434.jpg"
     }
 ]

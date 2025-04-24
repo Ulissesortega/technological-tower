@@ -1,6 +1,7 @@
 ---
 import Navbar from "../components/Navbar.astro";
 import { ClientRouter } from "astro:transitions";
+import ChevronArrow from "../components/ChevronArrow.astro";
 ---
 
 <!doctype html>
@@ -28,6 +29,29 @@ import { ClientRouter } from "astro:transitions";
 		<ClientRouter />
 		<Navbar />
 		<slot />
+		<div
+			style="
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+  "
+		>
+			<button
+				onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+				aria-label="Scroll to top"
+				class="btn"
+				style="
+      background-color: red;
+      border-radius: 50%;
+      padding: 10px;
+      border: none;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    "
+			>
+				<ChevronArrow />
+			</button>
+		</div>
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
