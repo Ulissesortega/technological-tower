@@ -1,22 +1,21 @@
 ---
+// You can still use your Layout import if needed
 import Layout from "../layouts/Layout.astro";
 ---
 
-<!-- Navbar -->
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <!-- Container wrapper -->
     <div class="container-fluid">
         <!-- Toggle button -->
         <button
-            data-mdb-collapse-init
             class="navbar-toggler"
             type="button"
-            data-mdb-target="#navbarSupportedContent"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
         >
-            <i class="fas fa-bars"></i>
+            <span class="navbar-toggler-icon"></span>
         </button>
 
         <!-- Collapsible wrapper -->
@@ -26,10 +25,11 @@ import Layout from "../layouts/Layout.astro";
                 <img
                     src="/Store/GELogo.png"
                     height="45"
-                    alt="Granite Expo Pittsburg LoGo"
+                    alt="Granite Expo Pittsburg Logo"
                     loading="lazy"
                 />
             </a>
+
             <!-- Left links -->
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
@@ -40,69 +40,42 @@ import Layout from "../layouts/Layout.astro";
                         >Kitchen Cabinets</a
                     >
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/countertop">Countertops</a>
-                </li>
-            </ul>
-            <!-- Left links -->
+                <li class="nav-item dropdown position-relative">
+                    <div class="nav-link-wrapper">
+                      <a class="nav-link" href="/countertop">Countertops</a>
+                      <ul class="dropdown-menu show-on-hover">
+                        <li><a class="dropdown-item" href="/countertop/quartz">Quartz</a></li>
+                        <li><a class="dropdown-item" href="/countertop/granite">Granite</a></li>
+                      </ul>
+                    </div>
+                  </li>              
+            </ul>            
         </div>
-        <!-- Collapsible wrapper -->
+
+        
 
         <!-- Right elements -->
         <div class="d-flex align-items-center">
             <!-- Icon -->
             <a class="text-reset me-3" href="#">
                 <i class="fas fa-shopping-cart"></i>
-            </a>
+            </a>           
 
-            <!-- Notifications -->
+            <!-- Avatar dropdown -->
             <div class="dropdown">
                 <a
-                    data-mdb-dropdown-init
-                    class="text-reset me-3 dropdown-toggle hidden-arrow"
-                    href="#"
-                    id="navbarDropdownMenuLink"
-                    role="button"
-                    aria-expanded="false"
-                >
-                    <i class="fas fa-bell"></i>
-                    <span
-                        class="badge rounded-pill badge-notification bg-danger"
-                        >1</span
-                    >
-                </a>
-                <ul
-                    class="dropdown-menu dropdown-menu-end"
-                    aria-labelledby="navbarDropdownMenuLink"
-                >
-                    <li>
-                        <a class="dropdown-item" href="#">Some news</a>
-                    </li>
-                    <li>
-                        <a class="dropdown-item" href="#">Another news</a>
-                    </li>
-                    <li>
-                        <a class="dropdown-item" href="#">Something else here</a
-                        >
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Avatar -->
-            <div class="dropdown">
-                <a
-                    data-mdb-dropdown-init
                     class="dropdown-toggle d-flex align-items-center hidden-arrow"
                     href="#"
                     id="navbarDropdownMenuAvatar"
                     role="button"
+                    data-bs-toggle="dropdown"
                     aria-expanded="false"
                 >
                     <img
                         src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
                         class="rounded-circle"
                         height="25"
-                        alt="Black and White Portrait of a Man"
+                        alt="Avatar"
                         loading="lazy"
                     />
                 </a>
@@ -110,27 +83,20 @@ import Layout from "../layouts/Layout.astro";
                     class="dropdown-menu dropdown-menu-end"
                     aria-labelledby="navbarDropdownMenuAvatar"
                 >
-                    <li>
-                        <a class="dropdown-item" href="#">My profile</a>
-                    </li>
-                    <li>
-                        <a class="dropdown-item" href="#">Settings</a>
-                    </li>
-                    <li>
-                        <a class="dropdown-item" href="#">Logout</a>
-                    </li>
+                    <li><a class="dropdown-item" href="#">My profile</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
                 </ul>
             </div>
         </div>
-        <!-- Right elements -->
     </div>
-    <!-- Container wrapper -->
 </nav>
-<!-- Navbar -->
-<script
-    type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"
+
+<!-- Keep this only if you're using Font Awesome. Otherwise remove it. -->
+<script src="https://kit.fontawesome.com/YOUR_KIT_ID.js" crossorigin="anonymous"
 ></script>
+
+<!-- Bootstrap 5 already included in your Layout.astro -->
 
 <style>
     .nav-link {
@@ -140,7 +106,7 @@ import Layout from "../layouts/Layout.astro";
         color: black;
         text-decoration: none;
         cursor: pointer;
-        padding-bottom: 4px; /* optional spacing */
+        padding-bottom: 4px;
     }
 
     .nav-link:hover {
@@ -154,11 +120,52 @@ import Layout from "../layouts/Layout.astro";
         bottom: 0;
         height: 2px;
         width: 0%;
-        background-color: Black; /* underline color */
+        background-color: black;
         transition: width 0.4s ease;
     }
 
     .nav-link:hover::after {
         width: 100%;
     }
+    .nav-item.dropdown {
+  position: relative;
+}
+
+.nav-link-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 1000;
+  min-width: 150px;
+  padding-top: 5px; /* slight buffer to help hover stay */
+  border: none;
+  transition: opacity 0.2s ease;
+}
+
+.nav-item.dropdown:hover .dropdown-menu,
+.nav-link-wrapper:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-item {
+  padding: 10px 20px;
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+  background-color: transparent;
+  white-space: nowrap;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
 </style>
