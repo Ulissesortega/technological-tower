@@ -1,0 +1,68 @@
+---
+import Navbar from "../components/Navbar.astro";
+import { ClientRouter } from "astro:transitions";
+import ChevronArrow from "../components/ChevronArrow.astro";
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Granite Expo Outlet</title>
+        <!-- Bootstrap -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+5hb7E1WFFc5MfwfP4wS5wb1OCpq/EdGkWc6aVd"
+            crossorigin="anonymous"
+        />
+        <!-- Bootstrap Icons -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+        />
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <ClientRouter />
+        <Navbar />
+        <div style="position: fixed; bottom: 20px; right: 20px;z-index: 9999;">
+            <button
+                onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+                aria-label="Scroll to top"
+                class="btn"
+                style="background-color: red; border-radius: 50%; padding: 10px; border: none; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"
+            >
+                <ChevronArrow />
+            </button>
+        </div>
+        <!-- Bootstrap -->
+        <script
+            is:inline
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+            crossorigin="anonymous"></script>
+        <!-- MDB Bootstrap -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"
+            is:inline></script>
+    </body>
+</html>
+
+<style is:global>
+    @import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+
+    html,
+    body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        font-family: "Abel";
+    }
+</style>
