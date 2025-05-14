@@ -22,7 +22,11 @@ import Layout from "../layouts/Layout.astro";
             <!-- Navbar brand -->
             <a class="navbar-brand mt-2 mt-lg-0" href="/">
                 <img
+<<<<<<< HEAD
                     src="Store/GELogo.png"
+=======
+                    src="/Store/GELogo.png"
+>>>>>>> 4a369ed1c2150044b35a4b50fe9c930b07397ec2
                     height="45"
                     alt="Granite Expo Pittsburg Logo"
                     loading="lazy"
@@ -41,24 +45,32 @@ import Layout from "../layouts/Layout.astro";
                 </li>
                 <li class="nav-item dropdown position-relative">
                     <div class="nav-link-wrapper">
-                      <a class="nav-link" href="/countertop">Countertops</a>
-                      <ul class="dropdown-menu show-on-hover">
-                        <li><a class="dropdown-item" href="/countertop/quartz">Quartz</a></li>
-                        <li><a class="dropdown-item" href="/countertop/granite">Granite</a></li>
-                      </ul>
+                        <a class="nav-link" href="/countertop">Countertops</a>
+                        <ul class="dropdown-menu show-on-hover">
+                            <li>
+                                <a
+                                    class="dropdown-item"
+                                    href="/countertop/quartz">Quartz</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="dropdown-item"
+                                    href="/countertop/granite">Granite</a
+                                >
+                            </li>
+                        </ul>
                     </div>
-                  </li>              
-            </ul>            
+                </li>
+            </ul>
         </div>
-
-        
 
         <!-- Right elements -->
         <div class="d-flex align-items-center">
             <!-- Icon -->
             <a class="text-reset me-3" href="#">
                 <i class="fas fa-shopping-cart"></i>
-            </a>           
+            </a>
 
             <!-- Avatar dropdown -->
             <div class="dropdown">
@@ -127,44 +139,43 @@ import Layout from "../layouts/Layout.astro";
         width: 100%;
     }
     .nav-item.dropdown {
-  position: relative;
-}
+        position: relative;
+    }
 
-.nav-link-wrapper {
-  position: relative;
-  display: inline-block;
-}
+    .nav-link-wrapper {
+        position: relative;
+        display: inline-block;
+    }
 
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: white;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  z-index: 1000;
-  min-width: 150px;
-  padding-top: 5px; /* slight buffer to help hover stay */
-  border: none;
-  transition: opacity 0.2s ease;
-}
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        min-width: 150px;
+        padding-top: 5px; /* slight buffer to help hover stay */
+        border: none;
+        transition: opacity 0.2s ease;
+    }
 
-.nav-item.dropdown:hover .dropdown-menu,
-.nav-link-wrapper:hover .dropdown-menu {
-  display: block;
-}
+    .nav-item.dropdown:hover .dropdown-menu,
+    .nav-link-wrapper:hover .dropdown-menu {
+        display: block;
+    }
 
-.dropdown-item {
-  padding: 10px 20px;
-  font-size: 18px;
-  text-decoration: none;
-  color: black;
-  background-color: transparent;
-  white-space: nowrap;
-}
+    .dropdown-item {
+        padding: 10px 20px;
+        font-size: 18px;
+        text-decoration: none;
+        color: black;
+        background-color: transparent;
+        white-space: nowrap;
+    }
 
-.dropdown-item:hover {
-  background-color: #f0f0f0;
-}
-
+    .dropdown-item:hover {
+        background-color: #f0f0f0;
+    }
 </style>

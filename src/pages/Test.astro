@@ -1,0 +1,46 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<div class="grid-wrapper">
+    <div class="header">
+        <p>Header</p>
+    </div>
+    <div class="side">
+        <p>Side</p>
+    </div>
+    <div class="hero">
+        <p>Hero</p>
+    </div>
+</div>
+
+<style>
+    .grid-wrapper {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "side hero";
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto 1fr;
+        gap: 1rem;
+        border: 2px dotted salmon;
+    }
+
+    .header {
+        grid-area: header;
+        background-color: aqua;
+        padding: 1rem;
+    }
+
+    .side {
+        grid-area: side;
+        background-color: sandybrown;
+        padding: 1rem;
+    }
+
+    .hero {
+        grid-area: hero;
+        background-color: lightgreen;
+        padding: 1rem;
+    }
+</style>
